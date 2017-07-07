@@ -23,10 +23,10 @@ h2 {
 	margin: 30px 0;
 }
 a{
-    color:#3d84e6;
+    color:#ee8a27;
 }
 a:hover, a:focus{
-    color:#3d84e6;
+    color:#ee8a27;
     text-decoration: underline;
 }
 .navbar-toggle {
@@ -50,7 +50,7 @@ label {
 }
 .btn-inline {
 	color: #9C9C9C;
-	font-size: 15px; 
+	font-size: 15px;
 }
 .form-control {
 	display: block;
@@ -79,7 +79,7 @@ label {
 	text-align: center;
 	color: white;
 	font-weight: 300;
-	position: relative; 
+	position: relative;
 	background-position-x: center;
 }
 #head.secondary {
@@ -211,11 +211,11 @@ ul, .list.custom-list ul {
 	box-shadow: none;
 	border: none;
 	padding: 0;
-	background: none; 
+	background: none;
 	padding: 4px;
 }
 .thumbnail time {
-	background: #3d84e6;
+	background: #ee8a27;
 	padding: 5px 0;
 	display: block;
 	text-indent: 12px;
@@ -234,8 +234,8 @@ ul, .list.custom-list ul {
 	top: -100px;
 }
 .navbar-inverse {
-	background: #fff;  
-margin: 0 auto; 
+	background: #fff;
+margin: 0 auto;
 }
 .navbar-inverse {
 	border: none;
@@ -245,20 +245,20 @@ margin: 0 auto;
 	font-size: 16px;
 	text-transform: uppercase;
 }
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, 
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .active > a{
-	background: #3d84e6;
+	background: #ee8a27;
 	color: #fff !important;
     border-radius: 0px;
-} 
+}
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > .open ul > a {
 	text-align: left;
 }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover{
 color: #fff !important;
     border-radius: 0px;
-    background: #3d84e6;
+    background: #ee8a27;
 }
 .heading-text{
     position: absolute;
@@ -285,7 +285,7 @@ font-size: 27px;
 .h-caption i {
 	display: block;
 	font-size: 54px;
-	color: #3d84e6;
+	color: #ee8a27;
 	margin-bottom: 36px;
 }
 .h-caption h4 {
@@ -387,7 +387,7 @@ img.pull-left {
 .featured-box i {
 	position: absolute;
 	display: inline-block;
-	color: #A8A8A8; 
+	color: #A8A8A8;
 	padding: 0px;
 	border-radius: 50px;
 	width: 24px;
@@ -422,7 +422,7 @@ footer {
 	color: #8c8c8c;
 }
 .social a:hover {
-	color: #3d84e6;
+	color: #ee8a27;
 }
 /* Footer */
 .footer1 {
@@ -469,7 +469,7 @@ footer {
 .follow-me-icons i {
 	float: left;
 	margin: 0 10px 0 0;
-	color: #3d84e6;
+	color: #ee8a27;
 }
 .footer2 {
 	background: #000;
@@ -493,7 +493,7 @@ footer {
 	margin: 0 5px;
 }
 #services .fa {
-	color: #3d84e6;
+	color: #ee8a27;
 }
 /* carousel */
 #quote-carousel {
@@ -588,14 +588,14 @@ nav#filter li {
 nav#filter a {
 	padding: 4px 12px;
 	line-height: 20px;
-	border: 1px solid #3d84e6;
+	border: 1px solid #ee8a27;
 	text-decoration: none;
-	color: #3d84e6;
+	color: #ee8a27;
     border-left: 0px;
 border-right: 0px;
 }
 nav#filter a.current {
-	background: #3d84e6;
+	background: #ee8a27;
 	color: #fff;
 }
 .iconColor .fa {
@@ -703,7 +703,7 @@ nav#filter a.current {
 }
 .da-dots span.da-dots-current:after {
 	content: '';
-	background: #3d84e6;
+	background: #ee8a27;
 }
 .team-member {
 	padding-top: 5px;
@@ -717,7 +717,7 @@ nav#filter a.current {
 	overflow: hidden;
 }
 .member-img img {
-	border-radius: 0px; 
+	border-radius: 0px;
 }
 .team-socials {
 	margin: 15px 0;
@@ -734,7 +734,7 @@ nav#filter a.current {
 	color: #C7C7C7;
 }
 .team-socials i:hover {
-	color: #3d84e6;
+	color: #ee8a27;
 }
 .team-member h4 {
 	font-size: 19px;
@@ -748,16 +748,16 @@ nav#filter a.current {
 	margin: 0;
 	text-align: center;
 }
-#head.secondary { 
+#head.secondary {
 	padding-top: 0px;
-	background:#3d84e6;
-	/*background: #3d84e6;*/
+	background:#ee8a27;
+	/*background: #ee8a27;*/
 	background-size: cover;
-	text-align: center; 
+	text-align: center;
     padding:10px 0;
-	height: 140px; 
+	height: 140px;
 }
-#head.secondary h1{ 
+#head.secondary h1{
     COLOR: #fff;
     text-align: center;
 }
@@ -808,10 +808,10 @@ nav#filter a.current {
 	transform: scale(1.1);
 }
 .flat .plan.featured:hover li.plan-name, .flat .plan:hover li.plan-name, .flat .plan.featured.plan-name {
-	background: #3d84e6 !important;
+	background: #ee8a27 !important;
 }
 .btn {
-	background: #3d84e6;
+	background: #ee8a27;
 	color: #fff;
 }
 .footer2 a {
@@ -854,7 +854,7 @@ height:480px !important;
 /* Small devices (tablets, up to 768px) */
 @media (max-width: 768px) {
 /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-    #head.secondary { 
+    #head.secondary {
 height: 157px !important;
 }
 #camera_wrap_4, #head{
@@ -886,7 +886,7 @@ text-align: right;
 }
 }
 
-@media (max-width: 420px) { 
+@media (max-width: 420px) {
 #camera_wrap_4, #head{
 height:380px !important;
 }
@@ -978,7 +978,7 @@ list-style: none;
 }
 .video-list-thumbs > li > a:hover .play-button{
 	color:#fff;
-	opacity:1; 
+	opacity:1;
 	transition:all 500ms ease;
 }
 .video-list-thumbs .duration{
@@ -997,7 +997,7 @@ list-style: none;
 	background-color:#000;
 	transition:all 500ms ease;
 }
-@media (min-width:320px) and (max-width: 480px) { 
+@media (min-width:320px) and (max-width: 480px) {
 	.video-list-thumbs .glyphicon-play-circle{
     font-size: 35px;
     right: 36%;
