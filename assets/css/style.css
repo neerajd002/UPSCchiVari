@@ -81,6 +81,7 @@ label {
 	font-weight: 300;
 	position: relative;
 	background-position-x: center;
+	margin-top: 100px;
 }
 #head.secondary {
 	height: 100px;
@@ -259,6 +260,13 @@ margin: 0 auto;
 color: #fff !important;
     border-radius: 0px;
     background: #ee8a27;
+}
+.navbar-fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
 }
 .heading-text{
     position: absolute;
