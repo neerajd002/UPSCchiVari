@@ -412,6 +412,15 @@ footer {
 	margin-top: 40px;
     padding-top: 20px;
 }
+.footerbottom ul {
+	padding: 0;
+}
+.footerbottom ul li a{
+	color: #878787;
+}
+.footerbottom .logo-text{
+	margin-top: 10px;
+}
  ul.menu{
     padding: 0px;
 }
