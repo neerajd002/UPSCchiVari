@@ -172,7 +172,8 @@ jQuery(document).ready(function ($) {
         }).join('&');
         $.ajax({
            type: "POST",
-           url: 'https://script.google.com/macros/s/AKfycbwRpHhcRjWBZnAdd5K87V8_LxsKLQZHppsOJT67rvz_91Tff0o/exec',
+           url: 'https://script.google.com/macros/s/AKfycbzSvYR-3GP5-dR7adN94GP9T88Qzfw5ne2OZFNW34RX_pnLKVY/exec',
+          //  url: 'https://script.google.com/macros/s/AKfycbwRpHhcRjWBZnAdd5K87V8_LxsKLQZHppsOJT67rvz_91Tff0o/exec',
            crossDomain: true,
            data: data,
           //  data: JSON.stringify(data),
