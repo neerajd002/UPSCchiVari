@@ -167,17 +167,19 @@ jQuery(document).ready(function ($) {
     });
     var submitForm = function(data) {
       if(data) {
-        // var encoded = Object.keys(data).map(function(k) {
-        //     return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
-        // }).join('&');
+        var encoded = Object.keys(data).map(function(k) {
+            return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+        }).join('&');
         $.ajax({
-           type: "GET",
+           type: "POST",
            url: 'https://script.google.com/macros/s/AKfycbwRpHhcRjWBZnAdd5K87V8_LxsKLQZHppsOJT67rvz_91Tff0o/exec',
            crossDomain: true,
-           data: JSON.stringify(data),
-           contentType: "application/json; charset=utf-8",
-          //  contentType: "application/x-www-form-urlencoded",
-           dataType: "jsonp",
+           data: data,
+          //  data: JSON.stringify(data),
+          //  contentType: "application/json; charset=utf-8",
+           contentType: "application/x-www-form-urlencoded",
+          //  dataType: "jsonp",
+           dataType: "json",
            beforeSend: function () {  },
            complete: function () {
              $('form#gform')[0].reset();
@@ -185,8 +187,9 @@ jQuery(document).ready(function ($) {
              $('form#gform button[type=submit]').removeClass('disabled');
            },
            success: function (json) {
-               alert(json.d);
-               console.log(json.d);
+              if(json.result == 'success') {
+                alert('Thanks for your feedback we will get back to you soon...');
+              }
            },
            failure: function (response) {
                alert(response.d);
