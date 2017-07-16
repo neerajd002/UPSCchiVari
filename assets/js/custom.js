@@ -173,11 +173,11 @@ jQuery(document).ready(function ($) {
         $.ajax({
            type: "GET",
            url: 'https://script.google.com/macros/s/AKfycbwRpHhcRjWBZnAdd5K87V8_LxsKLQZHppsOJT67rvz_91Tff0o/exec',
-          //  crossDomain: true,
+           crossDomain: true,
            data: JSON.stringify(data),
-          //  contentType: "application/json; charset=utf-8",
-           contentType: "application/x-www-form-urlencoded",
-           dataType: "json",
+           contentType: "application/json; charset=utf-8",
+          //  contentType: "application/x-www-form-urlencoded",
+           dataType: "jsonp",
            beforeSend: function () {  },
            complete: function () {
              $('form#gform')[0].reset();
