@@ -851,6 +851,10 @@ nav#filter a.current {
 	height: 100%;
 }
 
+.required {
+	color: #ff0000;
+}
+
 /**
   MEDIA QUERIES
 */
