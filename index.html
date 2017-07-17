@@ -21,6 +21,58 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+    <script type="text/javascript">
+    var locations = [
+      ['Test text1 <h2>Pune</h2> <img src=http://placehold.it/100>', 18.5245649, 73.7228812, 4],
+      ['Test text2 <h2>Nashik</h2> <img src=http://placehold.it/50>', 19.9909493, 73.7334409, 5],
+      ['Test text3 <h2>Jalgaon</h2> <img src=http://placehold.it/50>', 20.9900808, 75.5404038, 3],
+      ['Test text4 <h2>Mumbai</h2> <img src=http://placehold.it/50>', 19.0827699, 72.74112, 2],
+      ['<div class="nag">Test text5 <h2>Nagpur</h2><a href="google.com"><img src=http://placehold.it/50></a></div>', 21.1610714, 79.0024702, 1]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 7,
+      center: new google.maps.LatLng(19.828160, 75.553126),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    var image = {
+          url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+          // This marker is 20 pixels wide by 32 pixels high.
+          size: new google.maps.Size(20, 32),
+          // The origin for this image is (0, 0).
+          origin: new google.maps.Point(0, 0),
+          // The anchor for this image is the base of the flagpole at (0, 32).
+          anchor: new google.maps.Point(0, 32)
+        };
+        // Shapes define the clickable region of the icon. The type defines an HTML
+        // <area> element 'poly' which traces out a polygon as a series of X,Y points.
+        // The final coordinate closes the poly by connecting to the first coordinate.
+        var shape = {
+          coords: [1, 1, 1, 20, 18, 20, 18, 1],
+          type: 'poly'
+        };
+
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        icon: image,
+        shape: shape,
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -681,58 +733,7 @@
 
   <div id="map"></div>
 
-  <script type="text/javascript">
-    var locations = [
-      ['Test text1 <h2>Pune</h2> <img src=http://placehold.it/100>', 18.5245649, 73.7228812, 4],
-      ['Test text2 <h2>Nashik</h2> <img src=http://placehold.it/50>', 19.9909493, 73.7334409, 5],
-      ['Test text3 <h2>Jalgaon</h2> <img src=http://placehold.it/50>', 20.9900808, 75.5404038, 3],
-      ['Test text4 <h2>Mumbai</h2> <img src=http://placehold.it/50>', 19.0827699, 72.74112, 2],
-      ['<div class="nag">Test text5 <h2>Nagpur</h2><a href="google.com"><img src=http://placehold.it/50></a></div>', 21.1610714, 79.0024702, 1]
-    ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 7,
-      center: new google.maps.LatLng(19.828160, 75.553126),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-
-    var infowindow = new google.maps.InfoWindow();
-
-    var marker, i;
-
-    var image = {
-          url: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-          // This marker is 20 pixels wide by 32 pixels high.
-          size: new google.maps.Size(20, 32),
-          // The origin for this image is (0, 0).
-          origin: new google.maps.Point(0, 0),
-          // The anchor for this image is the base of the flagpole at (0, 32).
-          anchor: new google.maps.Point(0, 32)
-        };
-        // Shapes define the clickable region of the icon. The type defines an HTML
-        // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-        // The final coordinate closes the poly by connecting to the first coordinate.
-        var shape = {
-          coords: [1, 1, 1, 20, 18, 20, 18, 1],
-          type: 'poly'
-        };
-
-    for (i = 0; i < locations.length; i++) {
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        icon: image,
-        shape: shape,
-        map: map
-      });
-
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
-  </script>
 
 
     </div>
